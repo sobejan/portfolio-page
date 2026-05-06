@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobejan Srikanthan — Network &amp; IT Portfolio</title>
+    <meta name="description" content="Sobejan Srikanthan is a Network and IT student passionate about infrastructure, cybersecurity, and building reliable systems. Explore projects, skills, and certifications.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sobejan Srikanthan — Network & IT Portfolio">
+    <meta property="og:description" content="Network and IT student passionate about infrastructure, cybersecurity, and building reliable systems.">
+    <meta property="og:site_name" content="Sobejan Srikanthan">
+
+    <!-- Preload critical font -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KU7NSg.woff2" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== STICKY NAVIGATION ========== -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">
+                <span class="nav__logo-text">SS<span class="nav__logo-dot">.</span></span>
+            </a>
+            <button class="nav__hamburger" id="menuToggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== FULLSCREEN OVERLAY MENU ========== -->
+    <div class="menu-overlay" id="menuOverlay">
+        <nav class="menu-overlay__nav">
+            <a href="#about" class="menu-overlay__link" data-index="01">About</a>
+            <a href="#skills" class="menu-overlay__link" data-index="02">Skills</a>
+            <a href="#projects" class="menu-overlay__link" data-index="03">Projects</a>
+            <a href="#certifications" class="menu-overlay__link" data-index="04">Certifications</a>
+            <a href="#contact" class="menu-overlay__link" data-index="05">Contact</a>
+        </nav>
+        <div class="menu-overlay__footer">
+            <a href="https://www.linkedin.com/in/sobejan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/sobejan" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:info@sobejan.com">Email</a>
+        </div>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__portrait" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <div class="hero__left">
+                <p class="hero__greeting anim-hero">Hello, I'm</p>
+                <h1 class="hero__title anim-hero">Sobejan<br>Srikanthan<span class="hero__cursor">_</span></h1>
+                <p class="hero__subtitle anim-hero">Studying network security. Building real things on the side.</p>
+            </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <div class="hero__scroll-line"></div>
+            <svg class="hero__scroll-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1V13M7 13L1 7M7 13L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__header">
+                <span class="label">About Me</span>
+                <h2 class="section-title">Building the Backbone<br>of Digital Systems</h2>
+            </div>
+            <div class="about__content">
+                <p class="body-text about__story">I'm Sobejan Srikanthan, a <strong>Network and IT Security student at Ontario Tech University</strong>. I focus on understanding how systems are built, how they fail, and how to secure them, from the network layer up.</p>
+                <p class="body-text about__story">Outside of coursework I build real things. I run a <strong>self-hosted Proxmox homelab</strong> with a full <strong>Docker stack</strong>, remote access via <strong>Tailscale VPN</strong>, and uptime monitoring across services. I also write <strong>Python tooling</strong> to automate repetitive technical workflows.</p>
+                <p class="body-text about__story">I'm currently seeking <strong>co-op and internship opportunities for summer 2027</strong> in <strong>network security, cloud infrastructure, or IT operations</strong>.</p>
+            </div>
+            <div class="about__stats">
+                <div class="about__stat">
+                    <span class="about__stat-num terminal-text">&gt;_</span>
+                    <span class="about__stat-label">Network & IT Student</span>
+                </div>
+                <div class="about__stat">
+                    <span class="about__stat-num">2</span>
+                    <span class="about__stat-label">Real Projects Built</span>
+                </div>
+                <div class="about__stat">
+                    <span class="about__stat-num">2027</span>
+                    <span class="about__stat-label">Available for Co-op</span>
+                </div>
+                <div class="about__stat">
+                    <span class="about__stat-num">oTech</span>
+                    <span class="about__stat-label">Bachelor of IT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="skills" id="skills">
+        <div class="skills__banner">
+            <div class="container">
+                <span class="label">Technical Skills</span>
+                <h2 class="section-title section-title--light">What I Work With</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="skills__grid">
+                <div class="skills__category">
+                    <h3 class="skills__category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        Networking
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skills__tag">TCP/IP</span>
+                        <span class="skills__tag">DNS</span>
+                        <span class="skills__tag">DHCP</span>
+                        <span class="skills__tag">VLANs</span>
+                        <span class="skills__tag">Subnetting</span>
+                        <span class="skills__tag">Routing & Switching</span>
+                        <span class="skills__tag">Firewalls</span>
+                        <span class="skills__tag">VPN</span>
+                        <span class="skills__tag">Wireshark</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        Systems & OS
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skills__tag">Linux (Ubuntu/CentOS)</span>
+                        <span class="skills__tag">Bash</span>
+                        <span class="skills__tag">PowerShell</span>
+                        <span class="skills__tag">Virtualization</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Security
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skills__tag">Vulnerability Scanning</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skills__tag">Docker</span>
+                        <span class="skills__tag">Git</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        Programming
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skills__tag">Python</span>
+                        <span class="skills__tag">HTML/CSS</span>
+                        <span class="skills__tag">Scripting</span>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        Tools
+                    </h3>
+                    <div class="skills__tags">
+                        <span class="skills__tag">Cisco Packet Tracer</span>
+                        <span class="skills__tag">VMware</span>
+                        <span class="skills__tag">VirtualBox</span>
+                        <span class="skills__tag">Nmap</span>
+                        <span class="skills__tag">pfSense</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects__header">
+                <span class="label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="projects__subtitle">Real projects and lab work built to develop hands-on skills in infrastructure, automation, and network operations.</p>
+            </div>
+            <div class="projects__grid">
+                <a href="#" class="projects__card">
+                    <div class="projects__card-number">01</div>
+                    <h3 class="projects__card-title">Proxmox Homelab Infrastructure</h3>
+                    <p class="projects__card-text">Built a self-hosted home lab on Proxmox running an Ubuntu Server VM with a full Docker stack: Homepage, Portainer, Uptime Kuma, Scrutiny, and Speedtest Tracker. Configured Tailscale VPN for secure remote access, Samba shares for networked file storage, and a Seagate IronWolf drive passthrough for persistent storage.</p>
+                    <div class="projects__card-tags">
+                        <span>Proxmox</span>
+                        <span>Docker</span>
+                        <span>Linux</span>
+                        <span>Tailscale</span>
+                        <span>Networking</span>
+                    </div>
+                </a>
+                <a href="#" class="projects__card">
+                    <div class="projects__card-number">02</div>
+                    <h3 class="projects__card-title">Python Beat Grid Auditing CLI</h3>
+                    <p class="projects__card-text">Built a Python command-line tool that scans a Serato DJ library, reads track metadata, and flags files with missing beat grids. Designed around a keyword tagging system using Serato's comment field and smart crates for automated library organization.</p>
+                    <div class="projects__card-tags">
+                        <span>Python</span>
+                        <span>CLI</span>
+                        <span>Metadata Parsing</span>
+                        <span>Automation</span>
+                        <span>File Systems</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION & CREDENTIALS SECTION ========== -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <span class="label">Credentials</span>
+            <h2 class="section-title" style="text-align:center; margin-bottom: 48px;">Education &amp;<br>Credentials</h2>
+            <div class="certifications__grid">
+                <div class="certifications__card">
+                    <div class="certifications__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3 class="certifications__card-title">Ontario Tech University</h3>
+                    <p class="certifications__card-text">Network and IT Security Program. Currently pursuing studies in network engineering, system administration, and cybersecurity fundamentals.</p>
+                    <span class="certifications__card-status certifications__card-status--progress">In Progress</span>
+                </div>
+
+                <div class="certifications__card certifications__card--placeholder">
+                    <div class="certifications__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="certifications__card-title">Certifications</h3>
+                    <p class="certifications__card-text">CompTIA certifications will be listed here as they are completed.</p>
+                </div>
+
+                <!--
+                Uncomment when CompTIA A+ is earned:
+                <div class="certifications__card">
+                    <div class="certifications__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3 class="certifications__card-title">CompTIA A+</h3>
+                    <p class="certifications__card-text">Foundational IT certification covering hardware, software, networking, and troubleshooting essentials.</p>
+                    <span class="certifications__card-status">Completed</span>
+                </div>
+                -->
+
+                <!--
+                Uncomment when CompTIA Network+ is earned:
+                <div class="certifications__card">
+                    <div class="certifications__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3 class="certifications__card-title">CompTIA Network+</h3>
+                    <p class="certifications__card-text">Validates networking concepts, infrastructure, operations, and security for IT professionals.</p>
+                    <span class="certifications__card-status">Completed</span>
+                </div>
+                -->
+
+                <!--
+                Uncomment when CompTIA Security+ is earned:
+                <div class="certifications__card">
+                    <div class="certifications__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="certifications__card-title">CompTIA Security+</h3>
+                    <p class="certifications__card-text">Cybersecurity certification covering threats, attacks, vulnerabilities, and security operations.</p>
+                    <span class="certifications__card-status">Completed</span>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__content">
+                <span class="label">Get in Touch</span>
+                <h2 class="section-title section-title--xl">Let's Connect<span class="hero__cursor">_</span></h2>
+                <p class="body-text contact__desc">I'm actively looking for co-op and internship opportunities for summer 2027 in network security, cloud infrastructure, or IT operations. Reach out and let's talk.</p>
+                <div class="contact__links">
+                    <a href="mailto:info@sobejan.com" class="contact__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                        info@sobejan.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/sobejan" target="_blank" rel="noopener noreferrer" class="contact__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/sobejan" target="_blank" rel="noopener noreferrer" class="contact__link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <span class="nav__logo-text" style="font-size: 1.8rem;">SS<span class="nav__logo-dot">.</span></span>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigate</h4>
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#skills" class="footer__link">Skills</a>
+                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#certifications" class="footer__link">Certifications</a>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Connect</h4>
+                    <a href="mailto:info@sobejan.com" class="footer__link footer__link--accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:6px;margin-bottom:2px"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>info@sobejan.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/sobejan" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                    <a href="https://github.com/sobejan" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Sobejan Srikanthan. All rights reserved.</p>
+                <a href="#hero" class="footer__top-link">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
