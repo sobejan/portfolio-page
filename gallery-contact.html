@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Gallery — Sobejan Srikanthan</title>
+    <meta name="description" content="The Sobejan Srikanthan photography gallery is no longer active. Contact us directly to receive your gallery.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Photography Gallery — Sobejan Srikanthan">
+    <meta property="og:description" content="The photography gallery is no longer active. Contact us directly to receive your gallery.">
+    <meta property="og:site_name" content="Sobejan Srikanthan">
+
+    <!-- Preload critical font -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91aHEjcWuA_KU7NSg.woff2" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== STICKY NAVIGATION ========== -->
+    <header class="nav nav--scrolled scrolled" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-text">SS<span class="nav__logo-dot">.</span></span>
+            </a>
+            <button class="nav__hamburger" id="menuToggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== FULLSCREEN OVERLAY MENU ========== -->
+    <div class="menu-overlay" id="menuOverlay">
+        <nav class="menu-overlay__nav">
+            <a href="index.html#about" class="menu-overlay__link" data-index="01">About</a>
+            <a href="index.html#skills" class="menu-overlay__link" data-index="02">Skills</a>
+            <a href="index.html#projects" class="menu-overlay__link" data-index="03">Projects</a>
+            <a href="index.html#certifications" class="menu-overlay__link" data-index="04">Certifications</a>
+            <a href="index.html#contact" class="menu-overlay__link" data-index="05">Contact</a>
+        </nav>
+        <div class="menu-overlay__footer">
+            <a href="https://www.linkedin.com/in/sobejan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/sobejan" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:info@sobejan.com">Email</a>
+        </div>
+    </div>
+
+    <!-- ========== GALLERY CONTACT SECTION ========== -->
+    <main>
+        <section class="contact" id="gallery-contact" style="padding-top: calc(var(--nav-height) + 80px);">
+            <div class="container">
+                <div class="contact__content">
+                    <span class="label">Photography Gallery</span>
+                    <h1 class="section-title section-title--xl">Gallery No Longer<br>Active<span class="hero__cursor">_</span></h1>
+                    <p class="body-text contact__desc">We apologize for the inconvenience. Our photography gallery is no longer active. If you would like to receive your gallery, please reach out to us directly.</p>
+                    <div class="contact__links">
+                        <a href="mailto:info@sobejan.com?subject=Photography%20Gallery%20Request" class="contact__link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                            Email Us for Your Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <span class="nav__logo-text" style="font-size: 1.8rem;">SS<span class="nav__logo-dot">.</span></span>
+            </div>
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h4 class="footer__heading">Navigate</h4>
+                    <a href="index.html#about" class="footer__link">About</a>
+                    <a href="index.html#skills" class="footer__link">Skills</a>
+                    <a href="index.html#projects" class="footer__link">Projects</a>
+                    <a href="index.html#certifications" class="footer__link">Certifications</a>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Connect</h4>
+                    <a href="mailto:info@sobejan.com" class="footer__link footer__link--accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:6px;margin-bottom:2px"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>info@sobejan.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/sobejan" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                    <a href="https://github.com/sobejan" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Sobejan Srikanthan. All rights reserved.</p>
+                <a href="index.html" class="footer__top-link">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
